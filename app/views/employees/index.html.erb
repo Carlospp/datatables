@@ -1,0 +1,28 @@
+<div class="container-fluid">
+
+  <p id="notice" class="text-warning"><%= notice %></p>
+
+  <h1 class="text-center text-primary" >Lista de empleados</h1>
+
+  <table id="employees-table" class="display table-bordered table-striped", data-source="<%= employees_path(format: :json) %>">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Fecha nacimiento</th>
+        <th>Dirección</th>
+        <th>Cargo</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'Nuevo empleado', new_employee_path ,:class=>'btn btn-primary'%>
+</div>

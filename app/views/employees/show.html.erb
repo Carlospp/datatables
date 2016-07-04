@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @employee.nombre %>
+</p>
+
+<p>
+  <strong>Fecnac:</strong>
+  <%= @employee.fecnac %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @employee.direccion %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <% if @employee.position.present? %>
+     <%= @employee.position.nombre %>
+  <% else %>
+     <%= @employee.position %>
+  <% end %>
+</p>
+
+<%= link_to 'Editar', edit_employee_path(@employee) ,:class=>'btn btn-primary'%> |
+<%= link_to 'Atras', employees_path ,:class=>'btn btn-success'%>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  fecnac: 2016-07-03
+  direccion: MyText
+  position_id: 
+
+two:
+  nombre: MyString
+  fecnac: 2016-07-03
+  direccion: MyText
+  position_id: 
